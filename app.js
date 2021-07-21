@@ -18,7 +18,7 @@ app.use('/mail', adminRoutes);
 var welcomeRoute = require("./routes/welcome");
 app.use('/', welcomeRoute);
 
-app.listen(PORT, hostname, () => {
+app.listen(PORT, () => {
   
   console.log(`Server running at http://${hostname}:${PORT}/`);
 });
