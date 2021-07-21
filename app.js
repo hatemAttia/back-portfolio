@@ -15,7 +15,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 var adminRoutes = require("./routes/mail");
 app.use('/mail', adminRoutes);
-
+var welcomeRoute = require("./routes/welcome");
+app.use('/', welcomeRoute);
 
 app.listen(PORT, hostname, () => {
   
