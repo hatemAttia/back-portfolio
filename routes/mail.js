@@ -18,7 +18,8 @@ router.post('/', (req, res) => {
         auth: {
             user: 'hello@hatemattia.tn',
             pass: ')$ey(0Sso@kK'
-        }
+        },
+        tls: {rejectUnauthorized: false}
     });
 
     var mailOptions = {
