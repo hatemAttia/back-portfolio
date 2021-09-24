@@ -24,7 +24,7 @@ router.post('/', (req, res) => {
 
     var mailOptions = {
         from: email,
-        to: emailHost,
+        to: 'hello@hatemattia.tn',
         subject: "email from " + email + "name" + name + " about " + subject,
         text: message
     };
